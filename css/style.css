@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;   
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+header {
+    display: flex;
+    padding: 0 1%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.container-greetme {
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-greetme h1 {
+    font-size: 30px;
+}
+
+.name-container {
+    margin-bottom: 5px;
+   
+}
+
+#nameInput {
+    width: 800px;
+    height: 50px;
+    padding: 5px;
+    font-size: 40px;
+}
+
+button {
+    font-size: 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.name-container > input {
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 2px solid white;
+    padding: 0 100px; 
+    font-size: 50px;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+}
+
+.name-container > input:focus {
+    outline: none;
+}
+
+.name-container > input::placeholder {
+    color: rgba(245, 245, 245, 0.867);
+    opacity: 85%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+}
+
+
+.main-focus input {
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 650px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0;
+    background-color: rgba(255, 255, 255, 0.24);    
+}
+
+.main-focus input::placeholder {
+    opacity: 75%;
+    color: white;
+}
+
+.main-focus > input:focus {
+    outline: none;
+}
+
+.focus::-webkit-scrollbar {
+    display: none;
+}
+
+/* To do list - Gill */
+label {
+    letter-spacing: 2px;
+    margin: 0px 15px;
+    font-weight: bold;
+    word-break: break-all;
+    font-size: 50px;
+}
+
+.focus li button {
+    cursor: pointer;
+    color: rgb(255, 255, 255, 0.6);
+    transition: all ease 0.5s;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transform: translateY(2px);
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.focus li button:hover {
+    opacity: 1;
+}
+
+#time {
+    font-size: 9rem;
+    font-weight: lighter;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#date {
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+}
+
+.date-container {
+    margin-bottom: 10px;
+}
+
+#background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quote {
+    color: #fff;
+    font-style: italic;
+    align-items: center;
+    text-align: start;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+#content {
+    font-size: .8rem;
+}
+
+#author {
+    font-size: .8rem;
+}
+
+  /* Small Screen */
+
+@media only screen and (max-width: 767px) {
+    header {
+      font-size: 1.2rem;
+    }
+
+    .name-container > input::placeholder {
+        font-size: 20px;
+    }
+  
+    .main-focus input::placeholder {
+        font-size: 16px;
+    }
+  
+    #content::placeholder,
+    #author::placeholder {
+        font-size: 0.6rem;
+    }
+
+    .container-greetme h1 {
+      font-size: 24px;
+    }
+  
+    #nameInput {
+      width: 350px;
+      font-size: 24px;
+    }
+  
+    .name-container > input {
+      font-size: 30px;
+      padding: 0 20px;
+    }
+  
+    .main-focus input {
+      width: 350px;
+      font-size: 16px;
+    }
+  
+    label {
+      font-size: 30px;
+    }
+  
+    #time {
+      font-size: 5rem;
+    }
+  
+    #date {
+      font-size: 1rem;
+    }
+  
+    .quote {
+      font-size: 0.8rem;
+    }
+  
+    #content,
+    #author {
+      font-size: 0.6rem;
+    }
+  }
+  
+  /* Medium Screen */
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+      font-size: 1.3rem;
+    }
+
+    .name-container > input::placeholder {
+        font-size: 24px;
+    }
+  
+    .main-focus input::placeholder {
+        font-size: 20px;
+    }
+  
+    #content::placeholder,
+    #author::placeholder {
+        font-size: 0.7rem;
+    }
+  
+    .container-greetme h1 {
+      font-size: 28px;
+    }
+  
+    #nameInput {
+      width: 100%;
+      font-size: 28px;
+    }
+  
+    .name-container > input {
+      font-size: 34px;
+      padding: 0 40px;
+    }
+  
+    .main-focus input {
+      width: 650px;
+      font-size: 18px;
+    }
+  
+    label {
+      font-size: 36px;
+    }
+  
+    #time {
+      font-size: 7rem;
+    }
+  
+    #date {
+      font-size: 1.2rem;
+    }
+  
+    .quote {
+      font-size: 1rem;
+    }
+  
+    #content,
+    #author {
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Large Screen */
+
+  @media only screen and (min-width: 1024px) {
+    header {
+      font-size: 1.5rem;
+    }
+
+    .name-container > input::placeholder {
+        font-size: 30px;
+    }
+  
+    .main-focus input::placeholder {
+        font-size: 25px;
+    }
+  
+    #content::placeholder,
+    #author::placeholder {
+        font-size: 0.8rem;
+    }
+  
+    .container-greetme h1 {
+      font-size: 30px;
+    }
+  
+    #nameInput {
+      width: 800px;
+      font-size: 40px;
+    }
+  
+    .name-container > input {
+      font-size: 50px;
+      padding: 0 100px;
+    }
+  
+    .main-focus input {
+      width: 650px;
+      font-size: 25px;
+    }
+  
+    label {
+      font-size: 50px;
+    }
+  
+    #time {
+      font-size: 9rem;
+    }
+  
+    #date {
+      font-size: 1.4rem;
+    }
+  
+    .quote {
+      font-size: 0.8rem;
+    }
+  
+    #content,
+    #author {
+      font-size: 0.8rem;
+    }
+  }
